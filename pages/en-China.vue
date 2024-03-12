@@ -336,4 +336,64 @@
   letter-spacing: 0em;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 275vh;
+    width: 100vw;
+    z-index: 0;
+  }
+
+  .container {
+    color: #ffffff;
+    font-family: "Cabin";
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+  }
+
+  .header {
+    width: 90%;
+    height: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .bg {
+    position: absolute;
+    width: 100vw;
+    height: 275vh;
+    left: 0px;
+    top: -554px;
+  }
+  .events {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0.75rem;
+    height: 433px;
+    width: 75vw;
+  }
+  .card-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rectangle1 {
+    position: absolute;
+    width: 1920px;
+    height: 2600px;
+    left: 0px;
+    top: 0px;
+
+    background: #02061c;
+    opacity: 0.85;
+  }
+}
 </style>
