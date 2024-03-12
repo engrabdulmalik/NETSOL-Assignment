@@ -138,7 +138,6 @@
   height: 2529px;
   left: 0px;
   top: -554px;
-  overflow: hidden;
 }
 
 /* cloud-storage-background-business-network-design (1) 1 */
