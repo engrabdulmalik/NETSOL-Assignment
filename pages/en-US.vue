@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <header class="header">
       <div class="logo">
         <h1>NETSOL</h1>
@@ -21,6 +21,13 @@
 <script setup></script>
 
 <style scoped>
+.container {
+  color: #ffffff;
+  font-family: "Cabin";
+  height: 100vh;
+  width: 100vw;
+  
+}
 .header {
   width: 1780px;
   height: 83px;
@@ -67,17 +74,34 @@
   border: 1px dotted #9747ff;
   background-color: black;
   padding: 3rem;
+  border-radius: 15px;
 }
 
 .text1 {
-  color: white;
-  border-bottom: 1px solid white;
-  margin-bottom: 2rem;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  width: 350px;
+  height: 33px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 24px;
+  font-weight: 250;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .text2 {
   color: #00eaff;
-  border-bottom: 1px solid #00eaff;
-  padding-top: 2rem;
+  border-bottom: 1px solid #ffffff;
+  width: 350px;
+  height: 33px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 24px;
+  font-weight: 250;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 </style>

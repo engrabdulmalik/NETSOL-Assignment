@@ -11,10 +11,10 @@
         <!-- Dropdown content -->
         <div class="dropdown-content">
           <!-- Dropdown links -->
-          <router-link to="/en-US">USA</router-link>
-          <router-link to="/en-UK">UK</router-link>
-          <router-link to="/en-China">China</router-link>
-          <router-link to="/en-Pakistan">Pakistan</router-link>
+          <router-link to="/en-US" class="link1">USA</router-link>
+          <router-link to="/en-UK" class="link1">UK</router-link>
+          <router-link to="/en-China" class="link1">China</router-link>
+          <router-link to="/en-Pakistan" class="link1">Pakistan</router-link>
         </div>
       </div>
     </header>
@@ -98,19 +98,19 @@
 .container {
   color: #ffffff;
   font-family: "Cabin";
-  background: conic-gradient(
-    from 45deg,
-    #4328f2 100%,
-    #47fda5 100%,
-    #47fda5 100%,
-    #4328f2 100%
-  );
-  /* background-image: url("../assets/bg.png");
-  background-size: cover;
-  background-position: center; */
-
   height: 100vh;
   width: 100vw;
+  position: absolute;
+  background: conic-gradient(
+    from -67.22deg at 50% 41.12%,
+    #00eaff -61.63deg,
+    #0534a9 15.64deg,
+    #00eaff 151.75deg,
+    #0534a9 185.19deg,
+    #00eaff 298.37deg,
+    #0534a9 375.64deg
+  );
+  
 }
 
 .header {
@@ -125,6 +125,7 @@
 .logo {
   display: flex;
   align-items: center;
+  margin-left: 2.5rem;
 }
 
 .logo img {
@@ -176,15 +177,19 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #092530;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  width: 268px;
+  height: 268px;
+  border-radius: 15px;
+  border: 0.5px;
 }
 
 /* Style the dropdown links */
 .dropdown-content a {
-  color: black;
+  color: #ffffff;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -200,6 +205,19 @@
   display: block;
 }
 
+.link1 {
+  border-bottom: 1px solid #ffffff;
+  width: 200px;
+  height: 33px;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+  font-size: 24px;
+  font-weight: 250;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 .main {
   padding: 20px;
 }
@@ -207,6 +225,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 39px;
+  padding: 11px, 20px, 11px, 20px;
+  border-radius: 20px;
+  border: 1px;
+  gap: 10px;
 }
 .initial-btn {
   display: flex;
@@ -218,6 +241,16 @@
   color: white;
   height: 2rem;
   width: 10rem;
+  background: linear-gradient(89.97deg, #030a2d -0.5%, #030616 99.97%);
+  width: 241px;
+  height: 39px;
+  border: 1px solid;
+  border-image-source: linear-gradient(90deg, #2b3561 0%, #313651 101.04%);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 .hero {
   text-align: center;
@@ -230,6 +263,23 @@
   line-height: 67px;
   letter-spacing: 0em;
   text-align: center;
+}
+
+.hero p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.hero a {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .leasing-life {
@@ -261,7 +311,32 @@
   margin-bottom: 1rem;
   border-radius: 10px;
 }
+.event button {
+  color: #18ebfe;
+  background-color: #ffffff1a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-radius: 5px;
+}
 
+.event h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.event p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 .footer {
   text-align: center;
   padding: 20px;
